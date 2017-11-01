@@ -1,0 +1,39 @@
+body{
+	margin: 0;
+}
+
+nav {
+	width: 100%;
+	border-style: solid;
+	position: fixed;
+	height: 150px;
+	line-height: 100px;
+	background-color: #828282;
+	-webkit-transition: height .5s, line-height .5s;
+	transition: height .5s, line-height .5s;
+}
+
+.scrolled-nav {
+  height: 60px !important;
+  line-height: 60px !important;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-right: 40px;
+	overflow: hidden; 
+}
+
+nav li{
+	float: right;
+}
+
+nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 30px 30px;
+	text-decoration: none;
+}
