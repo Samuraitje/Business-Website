@@ -3,6 +3,7 @@ body{
 }
 
 nav {
+	z-index: 10;
 	position: fixed;
 	top: 0;
 	height: 100px;
@@ -64,4 +65,55 @@ nav li a:hover {
 
 p {
 	margin: 0;
+}
+
+.landingpage {
+	height: calc(100vh - 100px);
+	width: 100%;
+	margin-top: 100px;
+	background-color: #ffff99; 
+
+}
+
+.overOns {
+	height: calc(100vh - 50px);
+	width: 100%;
+	background-color: #ffbf80;
+}
+
+.meerInfo {
+	height: calc(100vh - 50px);
+	width: 100%;
+	background-color: #ffb3b3;
+	display: flex;
+	align-items: center;
+}
+
+.slider-box {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.slider {
+	text-align: center;
+}
+
+.slider img {
+	margin: 0 auto;
+	width: 700px;
+	height: 450px;
+
+}
+
+.tarieven {
+	height: calc(100vh - 50px);
+	width: 100%;
+	background-color: #3399ff;
+
+}
+
+.contact {
+	height: calc(100vh - 50px);
+	width: 100%;
+	background-color: #e6ff99;
 }
