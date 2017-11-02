@@ -63,7 +63,7 @@ nav li a:hover {
 	align-items: center;
     height: calc(100vh - 50px);
     width: 100%;
-   	border: 2px solid green;
+/*   	border: 2px solid green;*/
 }
 
 #questions{
@@ -71,7 +71,7 @@ nav li a:hover {
 	align-items: center;
     height: 470px;
     width: 550px;
-   	border: 1px solid blue;	
+/*   	border: 1px solid blue;	*/
 }
 
 #questions h3{
@@ -88,7 +88,8 @@ hr{
 	background-color: black;
 	margin-bottom: 20px;
 	margin-left: 50%;
-	transform: translate(-50%, -50%)
+	transform: translate(-50%, -50%);
+	border-color: #DEE5E4;
 }
 
 form{
@@ -140,5 +141,8 @@ button{
 	border-radius: 18px;
 	background-color: #E2D027;
 	border: 0px;
+}
+button:hover{
+	background-color: #DBC628;
 }
 
