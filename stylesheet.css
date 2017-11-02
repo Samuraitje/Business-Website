@@ -1,19 +1,29 @@
+h1,h2{
+	font-family: Montserrat;
+}
+h3,h4,h5,h6{
+	font-family: Mada;
+}
+
+p{
+	font-family: Pontano-Sans;
+}
+
 body{
-	margin: 0;
+	margin: 10px;
+	height: 100vh;
+	width: 100vw;
 }
 
 nav {
 	position: fixed;
 	top: 0;
-	height: 100px;
-	width: 100%;
-	line-height: 50px;
-	background-color: #828282;
-	-webkit-transition: height .5s, line-height .5s;
-	transition: height .5s, line-height .5s;
+	height: 50px;
+	width: 100vw;
+	background-color: #DEE5E4;
 }
 
-.scrolled-nav {
+/*.scrolled-nav {
   height: 50px !important;
   line-height: 0px !important;
 }
@@ -41,8 +51,79 @@ nav li a {
 nav li a:hover {
     background-color: #555;
     color: white;
+}*/
+
+
+#spacer{
+	margin: 50px;
 }
 
-p {
-	margin: 0;
+#form-div {
+	display: flex;
+	align-items: center;
+    height: calc(100vh - 50px);
+    width: 100%;
+/*   	border: 1px solid green;*/
 }
+
+#questions{
+	margin: 0 auto;
+	align-items: top;
+    height: 470px;
+    width: 550px;
+/*   	border: 1px solid blue;	*/
+}
+
+#questions h3{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 140%;
+	letter-spacing: 1px;
+/*	border: 1px solid green;*/
+	height: 5%;
+}
+
+form{
+	width: 100%;
+	height: 80%;
+/*	border: 1px solid red;*/
+	vertical-align: middle;
+}
+.form{
+	width: calc(100% - 40px);
+	padding: 20px 20px;
+	margin-bottom: 8px;
+	float: left;
+/*	border: 1px yellow solid;*/
+	background-color: #DEE5E4;
+	border: none;
+}
+
+form p{
+	float: left;
+	width: 7px;
+/*	border: 1px green solid;*/
+}
+
+#calendar,#extra-info{
+	width: calc(49% - 40px);
+	padding: 40px 20px;
+}
+
+#submit-button{
+	display: flex;
+	align-items: center;
+/*	border: 1px solid red;*/
+	height: calc(100% - 5% - 20px - 80%);
+	height: 10%;
+}
+button{
+	margin: 0 auto;
+	width: 220px;
+	height: 36px;
+	border-radius: 18px;
+	background-color: #E2D027;
+	border: 0px;
+}
+
