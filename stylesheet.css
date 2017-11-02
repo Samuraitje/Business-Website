@@ -83,6 +83,13 @@ nav li a:hover {
 /*	border: 1px solid green;*/
 	height: 5%;
 }
+#questions h4{
+	text-align: center;
+	display: none;
+	height: 30px;
+	margin: 10px 0px;
+/*	border: 1px blue solid;*/
+}
 hr{
 	width: 100vw;
 	background-color: black;

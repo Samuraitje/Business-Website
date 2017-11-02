@@ -5,14 +5,17 @@
 	<title>Afspraak Maken</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link href="https://fonts.googleapis.com/css?family=Mada|Montserrat|Open+Sans|Pontano+Sans" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </head>
 <body>
+
 	<nav id="navbar" class="nav"></nav>
 	<div id="spacer"></div>
 	<div id="form-div">
 		<div id="questions">
 			<h3>Make an appointment</h3>
 			<hr noshade="noshade">
+			<h4>We will acupunct you as soon as possible :)</h4>
 			<form>
 				<input class="form" 				id="name" 		type="text" name="name" 		placeholder="Name and Surname">
 				<input class="form" 				id="telephone"  type="text" name="telephone" 	placeholder="Phonenumber">
@@ -22,10 +25,12 @@
 				<input class="form form-lasttwo" 	id="extra-info" type="text" name="extra-info" 	placeholder="Other information">
 			</form>
 			<div id="submit-button">
-				<button onclick="#">Send request</button>	
+				<button onclick="">Send request</button>	
 			</div>
 		</div>
 	</div>
+
+	<script src="./javascript/afspraak-maken.js"></script>
 	
 </body>
 </html>
