@@ -9,12 +9,12 @@
 <body>
 	<nav id="navbar">
 		<ul>
-			<img id="logo" src="images/cao-acupunctuur.png" width="425" height="33.33">
-  			<li><a href="Contact">Contact</a></li>
-  			<li><a href="Tarieven">Tarieven</a></li>
-  			<li><a href="Over ons">Over ons</a></li>
-  			<li><a href="Maak afsrpaak">Maak afspraak</a></li>
-  			<li><a href="Voorpagina">Voorpagina</a></li>
+			<img id="logo" src="images/cao-acupunctuur.png">
+  			<li><a class="list" href="Contact">Contact</a></li>
+  			<li><a class="list" href="Tarieven">Tarieven</a></li>
+  			<li><a class="list" href="Over ons">Over ons</a></li>
+  			<li><a class="list" href="Maak afsrpaak">Maak afspraak</a></li>
+  			<li><a class="list" href="Voorpagina">Voorpagina</a></li>
 		</ul>
 		<script>$(document).ready(function(){
 	  		var scrollTop = 0;
@@ -23,8 +23,12 @@
 	     	$('.counter').html(scrollTop);
 	    	if (scrollTop >= 50) {
 	      	$('#navbar').addClass('scrolled-nav');
+	      	$('nav li a').addClass('scrolled-list');
+	      	$("#logo").css({"width":"243","height":"20","margin-left":"100px","padding": "16.667px","transition": "height .6s, width .6s","-webkit-transition": "height .6s, width .6s"});
 	    	} else if (scrollTop < 50) {
 	      	$('#navbar').removeClass('scrolled-nav');
+	      	$('#logo').css({"width":"425","height":"33.33","margin-left":"75px","padding": "33.33px","transition": "height .6s, width .6s","-webkit-transition": "height .6s, width .6s"});
+	      	$('nav li a').removeClass('scrolled-list');
 	    			} 
 	  			});  
 			});

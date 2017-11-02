@@ -9,13 +9,15 @@ nav {
 	width: 100%;
 	line-height: 50px;
 	background-color: #828282;
-	-webkit-transition: height .5s, line-height .5s;
-	transition: height .5s, line-height .5s;
+	-webkit-transition: height .6s, line-height .6s;
+	transition: height .6s, line-height .6s;
 }
 
 #logo {
 	padding: 33.33px;
-	padding-left: 75px;
+	margin-left: 75px;
+	width: 425px;
+	height: 33.33px;
 }
 
 .scrolled-nav {
@@ -29,12 +31,12 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	padding-right: 40px;
-	height: 100px;
+	height: 14vh;
 }
 
 nav li{
 	float: right;
-	font-size: 18px;
+	font-size: 14px;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -42,12 +44,21 @@ nav li a {
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 25px;
+	line-height: 100px;
+	vertical-align: middle;
+	width: 130px;
 	text-decoration: none;
+	-webkit-transition: line-height .6s;
+	transition: height: line-height .6s;
 }
 
+.scrolled-list {
+	line-height: 50px;
+}
+
+
 nav li a:hover {
-    background-color: #555;
+    background-color: #AF0000;
     color: white;
 }
 
