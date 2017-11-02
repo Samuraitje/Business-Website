@@ -3,19 +3,19 @@ body{
 }
 
 nav {
-	width: 100%;
-	border-style: solid;
 	position: fixed;
-	height: 150px;
-	line-height: 100px;
+	top: 0;
+	height: 100px;
+	width: 100%;
+	line-height: 50px;
 	background-color: #828282;
 	-webkit-transition: height .5s, line-height .5s;
 	transition: height .5s, line-height .5s;
 }
 
 .scrolled-nav {
-  height: 60px !important;
-  line-height: 60px !important;
+  height: 50px !important;
+  line-height: 0px !important;
 }
 
 nav ul {
@@ -23,17 +23,26 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	padding-right: 40px;
-	overflow: hidden; 
 }
 
 nav li{
 	float: right;
+	font-size: 18px;
 }
 
 nav li a {
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 30px 30px;
+	padding: 25px;
 	text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+p {
+	margin: 0;
 }

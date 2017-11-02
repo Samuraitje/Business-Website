@@ -7,23 +7,6 @@
 </head>
 
 <body>
-<script>$(document).ready(function(){
-  var scrollTop = 0;
-  $(window).scroll(function(){
-    scrollTop = $(window).scrollTop();
-     $('.counter').html(scrollTop);
-    
-    if (scrollTop >= 100) {
-      $('#navbar').addClass('scrolled-nav');
-    } else if (scrollTop < 100) {
-      $('#navbar').removeClass('scrolled-nav');
-    } 
-    
-  }); 
-  
-});
-</script>
-
 	<nav id="navbar" class="nav">
 		<ul>
   			<li><a href="Contact">Contact</a></li>
@@ -32,6 +15,21 @@
   			<li><a href="Maak afsrpaak">Maak afspraak</a></li>
   			<li><a href="Voorpagina">Voorpagina</a></li>
 		</ul>
+		<script>$(document).ready(function(){
+	  var scrollTop = 0;
+	  $(window).scroll(function(){
+	    scrollTop = $(window).scrollTop();
+	     $('.counter').html(scrollTop);
+	    if (scrollTop >= 50) {
+	      $('#navbar').addClass('scrolled-nav');
+	    } else if (scrollTop < 50) {
+	      $('#navbar').removeClass('scrolled-nav');
+	    } 
+	    
+	  }); 
+	  
+	});
+	</script>
 	</nav>
 	<p>
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
