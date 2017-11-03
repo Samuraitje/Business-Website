@@ -6,7 +6,7 @@ h3,h4,h5,h6{
 }
 
 p{
-	font-family: Pontano-Sans;
+	font-family: Mada;
 }
 
 body{
@@ -90,6 +90,8 @@ nav li a:hover {
 	margin: 10px 0px;
 /*	border: 1px blue solid;*/
 }
+
+
 hr{
 	width: 100vw;
 	background-color: black;
@@ -107,13 +109,17 @@ form{
 }
 .form{
 	width: calc(100% - 40px);
-	padding: 20px 20px;
+	padding: 20px;
 	margin-bottom: 1.7%;
 	float: left;
 /*	border: 1px yellow solid;*/
 	background-color: #DEE5E4;
 	border: none;
 }
+.form-not-correct{
+	border: 2px solid #5B8981
+}
+
 .form:hover::-webkit-input-placeholder {
     color: #3D3D3D;
 }
@@ -125,13 +131,23 @@ form p{
 }
 
 .form-lasttwo{
-	width: 49%;
+	width: 49.15%;
 	box-sizing: border-box;
 	padding: 40px 20px;	
 }
 
 #calendar{
 	margin-right: 1.7%;
+}
+
+#form-validation{	
+	font-size: 80%;
+}
+
+#questions img{
+	display: none;
+	transform: translate(-50%, 0%);
+	margin-left: 50%;
 }
 
 #submit-button{
@@ -150,6 +166,6 @@ button{
 	border: 0px;
 }
 button:hover{
-	background-color: #DBC628;
+	background-color: #EAD647;
 }
 
