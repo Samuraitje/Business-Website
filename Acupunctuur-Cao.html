@@ -14,7 +14,15 @@
 	
 	<div class="content">
 			<div id="home" class="home">
-			<nav id="navbar">
+				<img id="zhangjiajie" src="images/zhangjiajie.jpg">
+				<div id="homeText">
+					<div id="homeImg">
+						<img src="images/homephoto.jpg">
+					</div>
+					<div id="infoAccu"></div>
+					<div id="afspraak"></div>
+				</div>	
+				<nav id="navbar">
 					<ul>
 						<img id="logo" src="images/cao-acupunctuur.png">
 			  			<li><a class="list" href="#contact">Contact</a></li>
@@ -30,20 +38,17 @@
 				     	$('.counter').html(scrollTop);
 				    	if (scrollTop >= 50) {
 				      	$('#navbar').addClass('scrolled-nav');
-				      	$('#navbar').css('opacity', '1');
 				      	$('nav li a').addClass('scrolled-list');
-				      	$("#logo").css({"width":"243","height":"20","margin-left":"125px","padding": "16.667px","transition": "height .6s, width .6s, opacity .6s","-webkit-transition": "height .6s, width .6s, opacity .6s"});
+				      	$("#logo").css({"width":"243","height":"20","margin-left":"125	px","padding": "16.667px","transition": "height .8s, width .8s","-webkit-transition": "height .8s, width .8s, opacity .8s"});
 				    	} else if (scrollTop < 50) {
 				      	$('#navbar').removeClass('scrolled-nav');
-				      	$('#navbar').css('opacity', '0.7');
-				      	$('#logo').css({"width":"425","height":"33.33","margin-left":"75px","padding": "33.33px","transition": "height .6s, width .6s, opacity .6s","-webkit-transition": "height .6s, width .6s, opacity .6s"});
+				      	$('#logo').css({"width":"425","height":"33.33","margin-left":"75px","padding": "33.33px","transition": "height .8s, width .8s","-webkit-transition": "height .8s, width .8s"});
 				      	$('nav li a').removeClass('scrolled-list');
 				    			} 
 				  			});  
 						});
 					</script>
 				</nav>	
-			<img id="zhangjiajie" src="images/zhangjiajie.jpg">	
 			</div>
 
 			<div id="overOns" class="overOns">
