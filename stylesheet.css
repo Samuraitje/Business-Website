@@ -79,7 +79,7 @@ nav {
 	z-index: 10;
 	position: fixed;
 	top: 0;
-	height: 100px;
+	height: 50px;
 	width: 100%;
 	line-height: 50px;
 	background-color: rgba(130,130,130,0.6);
@@ -106,7 +106,7 @@ nav {
 	align-items: center;
     height: 470px;
     width: 550px;
-/*   	border: 1px solid blue;	*/
+   	border: 1px solid blue;	
 }
 #questions h3{
 	margin-top: 0px;
@@ -210,13 +210,15 @@ button:hover{
 }
 
 @media (max-width: 550px){
-/*	.form{
+/*	#questions{
 		width: 100%;
-		padding: 20px;
+		padding: 0% 5%;
+		height: 70vh;
+	}
+	.form-lasttwo{
+		width: calc(100%);
+		padding: 20px 20px;
 		margin-bottom: 1.7%;
-		float: left;
-		border: 1px yellow solid;
-		border: none;
 	}*/
 }
 
