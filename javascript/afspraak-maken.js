@@ -26,27 +26,19 @@ $(document).ready(function(){
 				$('#questions h4').css("display","block");
 				$('#questions img').css("display","block");
 				$('#form-validation').css("display","none");
+				$('.pop-up#back').delay(1500).fadeIn(5)
+				$('.pop-up#front').delay(1500).animate({left: '50%'},250);
 			}
 		}
 	})
 
-
-	$( ".cross" ).hide();
-	$( ".menu" ).hide();
-	$( ".hamburger" ).click(function() {
-	$( ".menu" ).slideToggle( "slow", function() {
-	$( ".hamburger" ).hide();
-	$( ".cross" ).show();
-	});
-	});
-
-	$( ".cross" ).click(function() {
-	$( ".menu" ).slideToggle( "slow", function() {
-	$( ".cross" ).hide();
-	$( ".hamburger" ).show();
-	});
-	});
-
+	$('.pop-up').click(function(event){
+		if(event.target.id == "back" || event.target.id == "cross" || event.target.id == "no-thanks-text"){
+			$('.pop-up').css("display","none")
+		} else if(event.target.id == "button"){
+			console.log("hello")
+		}
+	})
 
 
 });
