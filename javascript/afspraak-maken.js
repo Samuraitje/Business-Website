@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$('button').click(function(){
+	$('#submit-button button').click(function(){
 		let array1 = [$('#name'),$('#phone'),$('#email'),$('#type'),$('#calendar')]
 		let array_filtered = array1
 						.filter(i => i.val()==0)
@@ -26,6 +26,7 @@ $(document).ready(function(){
 				$('#questions h4').css("display","block");
 				$('#questions img').css("display","block");
 				$('#form-validation').css("display","none");
+				$('#questions #submit-button').css("display","none");
 				$('.pop-up#back').delay(1500).fadeIn(5)
 				$('.pop-up#front').delay(1500).animate({left: '50%'},250);
 			}
@@ -36,11 +37,14 @@ $(document).ready(function(){
 		if(event.target.id == "back" || event.target.id == "cross" || event.target.id == "no-thanks-text"){
 			$('.pop-up').css("display","none")
 		} else if(event.target.id == "button"){
-			console.log("hello")
+			alert('SUBSCRIBED!');
+			$('.pop-up').css("display","none")
 		}
 	})
 
-
+	$('.price button').click(function(event){
+		alert("session booked!")
+	})
 });
 
 
