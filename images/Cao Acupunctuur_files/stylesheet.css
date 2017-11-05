@@ -17,29 +17,24 @@ body{
 }
 
 .home {
+	width: 100%;
+	height: 100vh;
 	position: relative;
 }
 
-#wrapperBackground {
-	display: flex;
-	overflow: hidden;
+#zhangjiajie{
 	height: 100vh;
 	width: 100%;
 }
 
-#caoBackground {
-	margin: 0 auto;
-	align-self: center;
-}
-
 #homeText {
-	width: 55%;
+	width: 70%;
 	height: 500px;
 	position: absolute;
 	margin: 0 auto;
 	left: 0;
 	right: 0;
-	top: 150px;
+	top: 2;
 	background-color: rgba(223, 230, 229, 0.8); 
 }
 
@@ -99,19 +94,10 @@ nav {
 	overflow: hidden;
 }
 
-#cao {
-	height: 60px;
-	width: 60px;
-	padding: 20px;
-	padding-right: 0px;
-	margin-left: 100px;
-	float: left;
-
-}
 
 #logo {
 	padding: 33.33px;
-	padding-left: 0px;
+	margin-left: 75px;
 	width: 425px;
 	height: 33.33px;
 }
@@ -127,8 +113,7 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	padding-right: 120px;
-	height: 100px;
-	overflow: hidden;
+	height: 14vh;
 }
 
 nav li{
@@ -151,7 +136,6 @@ nav li a {
 
 .scrolled-list {
 	line-height: 50px;
-	height:;
 }
 
 
@@ -170,8 +154,8 @@ nav li a:hover {
 	height: 100vh;
 	width: 100%;
 	background-color: #ffb3b3;
-	margin: 0 auto;
 	display: flex;
+	align-items: center;
 }
 
 .slider-box {

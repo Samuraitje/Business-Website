@@ -11,112 +11,120 @@
 </head>
 
 <body id="body">
-	
 	<div class="content">
-			<div id="home" class="home">
-				<img id="zhangjiajie" src="images/zhangjiajie.jpg">
-				<div id="homeText">
-					<div id="homeImg">
-						<img src="images/homephoto.jpg">
-					</div>
-					<div id="infoAccu">
+		<div id="home" class="home">
+			<nav id="navbar">
+				<script>$(document).ready(function(){
+				  	var scrollTop = 0;
+				  	$(window).scroll(function(){
+				    scrollTop = $(window).scrollTop();
+				    $('.counter').html(scrollTop);
+				    if (scrollTop >= 50) {
+				    $('#navbar').addClass('scrolled-nav');
+				    $('nav li a').addClass('scrolled-list');
+				    $("#logo").css({"width":"243","height":"20","padding": "15.2px","padding-left": "0","transition": "height .8s, width .8s","-webkit-transition": "height .8s, width .8s, opacity .8s"});
+				    $("#cao").css({"width":"30","height":"30","padding": "10px","padding-right": "0","transition": "height .8s, width .8s","-webkit-transition": "height .8s, width .8s, opacity .8s"});
+				   	} else if (scrollTop < 50) {
+				    $('#navbar').removeClass('scrolled-nav');
+				   	$('#logo').css({"width":"425","height":"33.33","padding": "33.33px","padding-left": "0","transition": "height .8s, width .8s","-webkit-transition": "height .8s, width .8s"});
+				    $("#cao").css({"width":"60","height":"60","padding": "20px","padding-right": "0","transition": "height .8s, width .8s","-webkit-transition": "height .8s, width .8s, opacity .8s"});
+				    $('nav li a').removeClass('scrolled-list');
+				    		} 
+				  		});  
+					});
+				</script>
+				<ul>
+					<img id="cao" src="images/cao.gif">
+					<img id="logo" src="images/cao-acupunctuur.png">
+			  		<li><a class="list" href="#contact">Contact</a></li>
+			  		<li><a class="list" href="#tarieven">Tarieven</a></li>
+			  		<li><a class="list" href="#informatie">Informatie</a></li>
+			  		<li><a class="list" href="#overOns">Over ons</a></li>
+			  		<li><a class="list" href="#home">Home</a></li>
+				</ul>
+			</nav>	
+			<div id="wrapperBackground">
+				<img id="caoBackground" src="images/caoBackground.jpg">
+			</div>
+			<div id="homeText">
+				<div id="homeImg">
+					<img src="images/homephoto.jpg">
+				</div>
+				<div id="infoAccu">
 						<h2><span style="color: #AF0000">Wat</span> is acupunctuur?</h2>
 						<p>
 						Het is een <b>geneesmethode</b>, die reeds duizenden jaren oud is en slechts een deel vormt van de traditionele Chinese geneeskunde. <br><br> Deze onderscheidt twee behandelingsmethodes: <br><br> 1. <b>Uitwendige</b> behandelingsmethode: o.a. acupunctuur, acupressuur, moxibusie, massage, badtherapie, gymnastiek en ademtherapie. <br><br> 2. <b>Inwendige</b> behandelingsmethode: o.a. farmaca, dieet en meditatie. <br><br> Men ervaart vooral verbetering en genezing bij: <b>hoofdpijn</b> en <b>migraine</b>, <b>vermoeidheid</b> en chronische vermoeidheid, <b>rugpijn</b> en <b>reuma</b>, <b>artrose</b> en <b>artritis schouder-</b> en <b>nekpijn spier-</b> en <b>gewrichtspijn</b>.
 						</p>
-					</div>
-					<div id="afspraak">
+				</div>
+				<div id="afspraak">
 						
-					</div>
-				</div>	
-				<nav id="navbar">
-					<ul>
-						<img id="logo" src="images/cao-acupunctuur.png">
-			  			<li><a class="list" href="#contact">Contact</a></li>
-			  			<li><a class="list" href="#tarieven">Tarieven</a></li>
-			  			<li><a class="list" href="#informatie">Informatie</a></li>
-			  			<li><a class="list" href="#overOns">Over ons</a></li>
-			  			<li><a class="list" href="#home">Home</a></li>
-					</ul>
-					<script>$(document).ready(function(){
-				  		var scrollTop = 0;
-				  		$(window).scroll(function(){
-				    	scrollTop = $(window).scrollTop();
-				     	$('.counter').html(scrollTop);
-				    	if (scrollTop >= 50) {
-				      	$('#navbar').addClass('scrolled-nav');
-				      	$('nav li a').addClass('scrolled-list');
-				      	$("#logo").css({"width":"243","height":"20","margin-left":"125	px","padding": "16.667px","transition": "height .8s, width .8s","-webkit-transition": "height .8s, width .8s, opacity .8s"});
-				    	} else if (scrollTop < 50) {
-				      	$('#navbar').removeClass('scrolled-nav');
-				      	$('#logo').css({"width":"425","height":"33.33","margin-left":"75px","padding": "33.33px","transition": "height .8s, width .8s","-webkit-transition": "height .8s, width .8s"});
-				      	$('nav li a').removeClass('scrolled-list');
-				    			} 
-				  			});  
-						});
-					</script>
-				</nav>	
-			</div>
+				</div>
+			</div>	
+		</div>
 
-			<div id="overOns" class="overOns">
+		<div id="overOns" class="overOns">
 	
-			</div>
+		</div>
 
-			<div id="informatie" class="informatie">
-				<div class="slider-box">	
-				  	<script>
-		  		  		$(document).ready(function(){
-		      			$('.slider').bxSlider();
-		   			 	});
-		  			</script>
-					<div class="slider">
-			    	 	<div><img src="images/acupunctuurnaalden.jpg"></div>
-			         	<div><img src="images/kruidentherapie.jpg"></div>
-			         	<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						</p>
-						</div>
-			  		 </div>
-		  		</div>
-		  	</div>
+		<div id="informatie" class="informatie">
+			<div class="slider-box">	
+				<script>
+		  			$(document).ready(function(){
+		      		$('.slider').bxSlider();
+		   			});
+		  		</script>
+				<div class="slider">
+			    	<div>
+			    	<img src="images/acupunctuurnaalden.jpg">
+			    	</div>
+			        <div>
+			        <img src="images/kruidentherapie.jpg">
+			        </div>
+			         <div>
+			         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					</p>
+					</div>
+			  	</div>
+			</div>
+		</div>
 		
-			<div id="tarieven" class="tarieven">
+		<div id="tarieven" class="tarieven">
 			
-			</div>
+		</div>
 
-			<div id="contact" class="contact">
+		<div id="contact" class="contact">
 			
-			</div>
-
+		</div>
 	</div>
 </body>
 </html>
