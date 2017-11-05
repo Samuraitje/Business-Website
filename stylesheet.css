@@ -1,5 +1,7 @@
+/*-------------------------------------------- Website styling --------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------*/
 
-h1, h2{
+h1, h2 {
     font-family: Montserrat;
 }
 
@@ -13,10 +15,22 @@ p {
     font-size: 15px;
 }
 
-body{
+body {
 	margin: 0;
 	height: 100vh;
 }
+/*this is the black line*/
+hr {
+	width: 100vw;
+	background-color: black;
+	margin-bottom: 20px;
+	margin-left: 50%;
+	transform: translate(-50%, -50%);
+	border-color: #DEE5E4;
+}
+
+/*-------------------------------------------- Home page --------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------*/
 
 .home {
 	position: relative;
@@ -77,7 +91,7 @@ body{
 
 }
 
-#afspraak {
+#homeAfspraak {
 	box-sizing: border-box;
 	float: right;
 	height: 41.60%;
@@ -88,12 +102,16 @@ body{
 
 }
 
+/*-------------------------------------------- Home page, NavBar ------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------*/
+
+
 nav {
 	z-index: 10;
 	position: fixed;
 	top: 0;
 	height: 100px;
-	width: 100%;
+	width: 100vw;
 	line-height: 50px;
 	background-color: rgba(223, 230, 229, 0.8);
 	-webkit-transition: height .7s, line-height .7s;
@@ -128,14 +146,14 @@ nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	padding-right: 120px;
+	padding-right: 100px;
 	height: 100px;
 	overflow: hidden;
 }
 
 nav li{
 	float: right;
-	font-size: 15px;
+	font-size: 14px;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -145,7 +163,7 @@ nav li a {
 	text-align: center;
 	line-height: 100px;
 	vertical-align: middle;
-	width: 100px;
+	width: 80px;
 	text-decoration: none;
 	-webkit-transition: line-height .6s;
 	transition: height: line-height .6s;
@@ -153,7 +171,7 @@ nav li a {
 
 .scrolled-list {
 	line-height: 50px;
-	height:;
+	height: 50px;
 }
 
 
@@ -162,11 +180,17 @@ nav li a:hover {
     color: white;
 }
 
+/*-------------------------------------------- Over ons page--------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------*/
+
 .overOns {
 	height: 100vh;
 	width: 100%;
 	background-color: #ffbf80;
 }
+
+/*-------------------------------------------- Informatie page --------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------*/
 
 .informatie {
 	height: 100vh;
@@ -192,20 +216,69 @@ nav li a:hover {
 
 }
 
+/*-------------------------------------------- Tarieven page ----------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------*/
+
 .tarieven {
 	height: 100vh;
 	width: 100%;
-	background-color: #3399ff;
+	background-color: #ffffff;
 
 }
 
-.contact {
-	height: 100vh;
+#page-div #pricing{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+/*   	border: 1px black solid;*/
+}
+#page-div #three-prices{
+	height: 80%;
+	width: 90%;
+	margin: 0 auto;
+/*	border: 1px black solid;*/
+	box-sizing: border-box;
+}
+#page-div #three-prices .price{
+	float: left;
+/*	border: 1px black solid;*/
+	box-sizing: border-box;
+	margin: 0 2%;
+	width: 29.33%;
+	height: 100%;
+	padding: 4%;
+	background-color: rgb(222,229,228);
+}
+#page-div #three-prices .price:hover{
+	border: 2px solid #5B8981;
+	padding: calc(4% - 2px);
+
+}
+
+#page-div #three-prices .price h4{
+/*	border: 1px black solid;*/
 	width: 100%;
-	background-color: #e6ff99;
+	margin: 0 auto;
+	text-align: center;
+}
+#page-div #three-prices .price h3{
+/*	border: 1px black solid;*/
+	margin: 5% auto;
+	font-size: 250%;
+	align-items: center;
+	height: 15%;
+}
+#page-div #three-prices .price p{
+	padding: 5%;
+	color: rgb(137,137,137);
+/*	border: 1px black solid;*/
+}
+#page-div #three-prices .price button{
+	width: 100%;
+	margin-top: 8%;
 }
 
-h3{
+#pricing h3{
 	margin-top: 0px;
 	margin-bottom: 20px;
 	text-align: center;
@@ -213,6 +286,15 @@ h3{
 	letter-spacing: 1px;
 /*	border: 1px solid green;*/
 	height: 5%;
+}
+
+.princing hr {
+	width: 100vw;
+	background-color: black;
+	margin-bottom: 20px;
+	margin-left: 50%;
+	transform: translate(-50%, -50%);
+	border-color: #DEE5E4;
 }
 
 #page-div {
@@ -225,6 +307,122 @@ h3{
 .spacer{
 	height:50px;
 	width:100%;
+}
+/*-------------------------------------------- AFSPRAAK MAKEN ---------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------*/
+
+.afspraakMaken {
+	height: 100vh;
+	width: 100%;
+	background-color: #ffffff;
+}
+
+.afspraakMaken h3 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 140%;
+	letter-spacing: 1px;
+/*	border: 1px solid green;*/
+	height: 5%;
+}
+
+#page-div #questions{
+	margin: 0 auto;
+	align-items: center;
+    height: 470px;
+    width: 550px;
+/*   	border: 1px solid blue;	*/
+}
+/*these are hidden until the submit is succesful*/
+#questions img{
+	display: none;
+	transform: translate(-50%, 0%);
+	margin-left: 50%;
+}
+
+#questions hr {
+	width: 100vw;
+	background-color: black;
+	margin-bottom: 20px;
+	margin-left: 50%;
+	transform: translate(-50%, -50%);
+	border-color: #DEE5E4;
+}
+
+#questions h4{
+	text-align: center;
+	display: none;
+	height: 30px;
+	margin: 10px 0px;
+/*	border: 1px blue solid;*/
+}
+/*this is for de form questions styling*/
+form{
+	width: 100%;
+	height: 77%;
+/*	border: 1px solid red;*/
+	vertical-align: middle;
+}
+
+.form{
+	width: calc(100% - 40px);
+	padding: 20px;
+	margin-bottom: 1.7%;
+	float: left;
+/*	border: 1px yellow solid;*/
+	background-color: #DEE5E4;
+	border: none;
+}
+.form-not-correct{
+	border: 2px solid #5B8981
+}
+
+.form:hover::-webkit-input-placeholder {
+    color: #3D3D3D;
+}
+input:focus{
+    outline: none;
+    background-color: #D7E2E0;
+}
+
+form p{
+	float: left;
+	width: 7px;
+/*	border: 1px green solid;*/
+}
+
+.form-lasttwo{
+	width: 49.15%;
+	box-sizing: border-box;
+	padding: 40px 20px;	
+}
+
+#calendar{
+	margin-right: 1.7%;
+}
+
+/*this styling all has to do with the submit button & form validation*/
+#form-validation{	
+	font-size: 80%;
+}
+
+#submit-button{
+	display: flex;
+	align-items: center;
+	height: calc(100% - 5% - 20px - 80%);
+	height: 10%;
+}
+button{
+	margin: 0 auto;
+	width: 220px;
+	height: 36px;
+	border-radius: 18px;
+	background-color: #E2D027;
+	border: 0px;
+}
+button:hover{
+	background-color: #EAD647;
 }
 
 /*------------------------------------------ NEWSLETTER POP-UP --------------------------------------------------*/
@@ -304,194 +502,13 @@ h3{
 /*	border: 1px blue solid;*/
 }
 
-/*-------------------------------------------- AFSPRAAK MAKEN ---------------------------------------------------*/
+/*-------------------------------------------- Contact page -----------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------*/
-
-#page-div #questions{
-	margin: 0 auto;
-	align-items: center;
-    height: 470px;
-    width: 550px;
-/*   	border: 1px solid blue;	*/
-}
-/*these are hidden until the submit is succesful*/
-#questions img{
-	display: none;
-	transform: translate(-50%, 0%);
-	margin-left: 50%;
-}
-#questions h4{
-	text-align: center;
-	display: none;
-	height: 30px;
-	margin: 10px 0px;
-/*	border: 1px blue solid;*/
-}
-
-/*this is the black line*/
-hr{
-	width: 100vw;
-	background-color: black;
-	margin-bottom: 20px;
-	margin-left: 50%;
-	transform: translate(-50%, -50%);
-	border-color: #DEE5E4;
-}
-
-/*this is for de form questions styling*/
-form{
-	width: 100%;
-	height: 77%;
-/*	border: 1px solid red;*/
-	vertical-align: middle;
-}
-.form{
-	width: calc(100% - 40px);
-	padding: 20px;
-	margin-bottom: 1.7%;
-	float: left;
-/*	border: 1px yellow solid;*/
-	background-color: #DEE5E4;
-	border: none;
-}
-.form-not-correct{
-	border: 2px solid #5B8981
-}
-
-.form:hover::-webkit-input-placeholder {
-    color: #3D3D3D;
-}
-input:focus{
-    outline: none;
-    background-color: #D7E2E0;
-}
-
-form p{
-	float: left;
-	width: 7px;
-/*	border: 1px green solid;*/
-}
-
-.form-lasttwo{
-	width: 49.15%;
-	box-sizing: border-box;
-	padding: 40px 20px;	
-}
-
-#calendar{
-	margin-right: 1.7%;
-}
-
-/*this styling all has to do with the submit button & form validation*/
-#form-validation{	
-	font-size: 80%;
-}
-
-#submit-button{
-	display: flex;
-	align-items: center;
-	height: calc(100% - 5% - 20px - 80%);
-	height: 10%;
-}
-button{
-	margin: 0 auto;
-	width: 220px;
-	height: 36px;
-	border-radius: 18px;
-	background-color: #E2D027;
-	border: 0px;
-}
-button:hover{
-	background-color: #EAD647;
-}
-.overOns {
-	height: calc(100vh + 50px);
-	width: 100%;
-	background-color: #ffbf80;
-}
-
-.informatie {
-	height: calc(100vh + 50px);
-	width: 100%;
-	background-color: #ffb3b3;
-	display: flex;
-	align-items: center;
-}
-
-.slider-box {
-	width: 70%;
-	margin: 0 auto;
-}
-
-.slider {
-	text-align: center;
-}
-
-.slider img {
-	margin: 0 auto;
-	width: 700px;
-	height: 450px;
-
-} 
 
 .contact {
-	height: calc(100vh + 50px);
+	height: 100vh;
 	width: 100%;
 	background-color: #e6ff99;
-}
-
-/*----------------------------------------------- PRICING -------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------*/
-#page-div #pricing{
-    width: 80%;
-    height: 80%;
-    margin: 0 auto;
-/*   	border: 1px black solid;*/
-}
-#page-div #three-prices{
-	height: 80%;
-	width: 90%;
-	margin: 0 auto;
-/*	border: 1px black solid;*/
-	box-sizing: border-box;
-}
-#page-div #three-prices .price{
-	float: left;
-/*	border: 1px black solid;*/
-	box-sizing: border-box;
-	margin: 0 2%;
-	width: 29.33%;
-	height: 100%;
-	padding: 4%;
-	background-color: rgb(222,229,228);
-}
-#page-div #three-prices .price:hover{
-	border: 2px solid #5B8981;
-	padding: calc(4% - 2px);
-
-}
-
-#page-div #three-prices .price h4{
-/*	border: 1px black solid;*/
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
-}
-#page-div #three-prices .price h3{
-/*	border: 1px black solid;*/
-	margin: 5% auto;
-	font-size: 250%;
-	align-items: center;
-	height: 15%;
-}
-#page-div #three-prices .price p{
-	padding: 5%;
-	color: rgb(137,137,137);
-/*	border: 1px black solid;*/
-}
-#page-div #three-prices .price button{
-	width: 100%;
-	margin-top: 8%;
 }
 
 /*--------------------------------------------- MEDIA QUERIES ---------------------------------------------------*/
@@ -505,5 +522,5 @@ button:hover{
 		width: 95%;
 	}
 */
-};
+
 

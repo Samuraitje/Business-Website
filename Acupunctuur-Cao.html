@@ -8,10 +8,12 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  	<script src="./javascript/afspraak-maken.js"></script>
 </head>
 
 <body id="body">
 	<div class="content">
+<!-- Home Page -->
 		<div id="home" class="home">
 			<nav id="navbar">
 				<script>$(document).ready(function(){
@@ -37,6 +39,7 @@
 					<img id="cao" src="images/cao.gif">
 					<img id="logo" src="images/cao-acupunctuur.png">
 			  		<li><a class="list" href="#contact">Contact</a></li>
+			  		<li><a class="list" href="#afspraakMaken">Afspraak</a></li>
 			  		<li><a class="list" href="#tarieven">Tarieven</a></li>
 			  		<li><a class="list" href="#informatie">Informatie</a></li>
 			  		<li><a class="list" href="#overOns">Over ons</a></li>
@@ -56,93 +59,14 @@
 						Het is een <b>geneesmethode</b>, die reeds duizenden jaren oud is en slechts een deel vormt van de traditionele Chinese geneeskunde. <br><br> Deze onderscheidt twee behandelingsmethodes: <br><br> 1. <b>Uitwendige</b> behandelingsmethode: o.a. acupunctuur, acupressuur, moxibusie, massage, badtherapie, gymnastiek en ademtherapie. <br><br> 2. <b>Inwendige</b> behandelingsmethode: o.a. farmaca, dieet en meditatie. <br><br> Men ervaart vooral verbetering en genezing bij: <b>hoofdpijn</b> en <b>migraine</b>, <b>vermoeidheid</b> en chronische vermoeidheid, <b>rugpijn</b> en <b>reuma</b>, <b>artrose</b> en <b>artritis schouder-</b> en <b>nekpijn spier-</b> en <b>gewrichtspijn</b>.
 						</p>
 				</div>
-				<div id="afspraak">
-						
+				<div id="homeAfspraak">
 				</div>
-			</div>	
-		</div>
-
+			</div>
+		</div>		
+<!-- Over ons Page -->
 		<div id="overOns" class="overOns">
-	
 		</div>
-
-		<div class="pop-up" id="front">
-			<div id="wrapper">
-				<img id="cross" src="./images/cross.png">
-				<img id="scenery" src="./images/popup-image.png">
-				<h3>Stay up-to-date!</h3>
-			</div>
-			<div id="wrapper2">
-				<p id="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, minima molestiae ad nulla illo nesciunt consequuntur animi pariatur incidunt maxime, iure iusto a unde ipsam dolor illum autem adipisci amet!</p>
-				<div id="subscribe">
-					<button id="button">Yes, please subscribe</button>
-					<p id="no-thanks-text">No thanks</p>
-				</div>	
-			</div>
-		</div>
-		<div class="pop-up" id="back"></div>
-		
-		<div class="spacer"></div>
-		<div id="page-div">
-			<div id="questions">
-				<h3>Make an appointment</h3>
-				<hr noshade="noshade">
-				<img src="./images/check.png">
-				<h4>We will acupunct you as soon as possible :)</h4>
-				<form>
-					<input class="form" 				id="name" 		type="text" name="name" 		placeholder="Name and Surname">
-					<input class="form" 				id="phone" 		type="text" name="telephone" 	placeholder="Phonenumber">
-					<input class="form" 				id="email"  	type="text" name="email" 		placeholder="Email adress">
-					<input class="form" 				id="type"  		type="text" name="type" 		placeholder="What type of consult?">
-					<input class="form form-lasttwo" 	id="calendar"  	type="text" name="calendar" 	placeholder="Preferential time and date">
-					<input class="form form-lasttwo" 	id="extra-info" type="text" name="extra-info" 	placeholder="Other information">
-				</form>
-				<p id="form-validation"></p>
-				<div id="submit-button">
-					<button onclick="">Send request</button>	
-				</div>
-			</div>
-		</div>
-
-	<div id="part-jeroen">	
-		<div class="spacer"></div>
-		<div id="page-div">
-			<div id="pricing">
-				<h3>Pricing</h3>
-				<hr noshade="noshade">
-				<div id="three-prices">
-					<div class="price">
-						<h4>OPTION </h4>
-						<h3>43€</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation.</p>
-						<button>Book session</button>
-					</div>
-					<div class="price">
-						<h4>OPTION 2</h4>
-						<h3>43€</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation.</p>
-						<button>Book session</button>
-					</div>
-					<div class="price">
-						<h4>OPTION 3</h4>
-						<h3>43€</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation.</p>
-						<button>Book session</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		
-
-
-
+<!-- Informatie page -->
 		<div id="informatie" class="informatie">
 			<div class="slider-box">	
 				<script>
@@ -194,15 +118,86 @@
 			  	</div>
 			</div>
 		</div>
-	</div>
-		
+<!-- Tarieven page -->
+		<div id="tarieven" class="tarieven">
+			<div id="part-jeroen">	
+			<div class="spacer"></div>
+			<div id="page-div">
+				<div id="pricing">
+					<h3>Tarieven</h3>
+					<div id="three-prices">
+						<div class="price">
+							<h4>OPTION </h4>
+							<h3>43€</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation.</p>
+							<button>Book session</button>
+						</div>
+						<div class="price">
+							<h4>OPTION 2</h4>
+							<h3>43€</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation.</p>
+							<button>Book session</button>
+						</div>
+						<div class="price">
+							<h4>OPTION 3</h4>
+							<h3>43€</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation.</p>
+							<button>Book session</button>
+						</div>
+					</div>
+				</div>
+			</div>	
+			</div>
+		</div>
+<!-- Afspraak maken page -->
+		<div id="afspraakMaken" class="afspraakMaken">
+			<div class="pop-up" id="front">
+				<div id="wrapper">
+					<img id="cross" src="./images/cross.png">
+					<img id="scenery" src="./images/popup-image.png">
+					<h3>Stay up-to-date!</h3>
+				</div>
+				<div id="wrapper2">
+						<p id="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, minima molestiae ad nulla illo nesciunt consequuntur animi pariatur incidunt maxime, iure iusto a unde ipsam dolor illum autem adipisci amet!</p>
+					<div id="subscribe">
+						<button id="button">Yes, please subscribe</button>
+						<p id="no-thanks-text">No thanks</p>
+					</div>	
+				</div>
+			</div>
+			<div class="pop-up" id="back"></div>
+			<div class="spacer"></div>
 
-		<div id="contact" class="contact">
-			
+			<div id="page-div">
+				<div id="questions">
+				<h3>Maak een afspraak</h3>
+					<img src=".images/check.png">
+					<h4>We will acupunct you as soon as possible :)</h4>
+					<form>
+						<input class="form" 				id="name" 		type="text" name="name" 		placeholder="Name and Surname">
+						<input class="form" 				id="phone" 		type="text" name="telephone" 	placeholder="Phonenumber">
+						<input class="form" 				id="email"  	type="text" name="email" 		placeholder="Email adress">
+						<input class="form" 				id="type"  		type="text" name="type" 		placeholder="What type of consult?">
+						<input class="form form-lasttwo" 	id="calendar"  	type="text" name="calendar" 	placeholder="Preferential time and date">
+						<input class="form form-lasttwo" 	id="extra-info" type="text" name="extra-info" 	placeholder="Other information">
+					</form>
+					<p id="form-validation"></p>
+					<div id="submit-button">
+					<button onclick="">Send request</button>	
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- Contact page -->
+		<div id="contact" class="contact">	
+
 		</div>
 	</div>
-
-	<script src="./javascript/afspraak-maken.js"></script>
-
 </body>
 </html>
