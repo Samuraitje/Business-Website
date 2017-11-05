@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Afspraak Maken</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Mada|Montserrat|Open+Sans|Pontano+Sans" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+	<div class="pop-up" id="front">
+		<div id="wrapper">
+			<img id="cross" src="./images/cross.png">
+			<img id="scenery" src="./images/popup-image.png">
+			<h3>Stay up-to-date!</h3>
+		</div>
+		<div id="wrapper2">
+			<p id="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, minima molestiae ad nulla illo nesciunt consequuntur animi pariatur incidunt maxime, iure iusto a unde ipsam dolor illum autem adipisci amet!</p>
+			<div id="subscribe">
+				<button id="button">Yes, please subscribe</button>
+				<p id="no-thanks-text">No thanks</p>
+			</div>	
+		</div>
+
+	</div>
+	<div class="pop-up" id="back"></div>
+	
+	<div class="spacer"></div>
+	<div id="page-div">
+		<div id="questions">
+			<h3>Make an appointment</h3>
+			<hr noshade="noshade">
+			<img src="./images/check.png">
+			<h4>We will acupunct you as soon as possible :)</h4>
+			<form>
+				<input class="form" 				id="name" 		type="text" name="name" 		placeholder="Name and Surname">
+				<input class="form" 				id="phone" 		type="text" name="telephone" 	placeholder="Phonenumber">
+				<input class="form" 				id="email"  	type="text" name="email" 		placeholder="Email adress">
+				<input class="form" 				id="type"  		type="text" name="type" 		placeholder="What type of consult?">
+				<input class="form form-lasttwo" 	id="calendar"  	type="text" name="calendar" 	placeholder="Preferential time and date">
+				<input class="form form-lasttwo" 	id="extra-info" type="text" name="extra-info" 	placeholder="Other information">
+			</form>
+			<p id="form-validation"></p>
+			<div id="submit-button">
+				<button onclick="">Send request</button>	
+			</div>
+		</div>
+	</div>
+
+
+	<div class="spacer"></div>
+	<div id="page-div">
+		<div id="pricing">
+			<h3>Pricing</h3>
+			<hr noshade="noshade">
+			<div id="three-prices">
+				<div class="price">
+					<h4>OPTION </h4>
+					<h3>43€</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation.</p>
+					<button>Book session</button>
+				</div>
+				<div class="price">
+					<h4>OPTION 2</h4>
+					<h3>43€</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation.</p>
+					<button>Book session</button>
+				</div>
+				<div class="price">
+					<h4>OPTION 3</h4>
+					<h3>43€</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation.</p>
+					<button>Book session</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	</div>
+
+
+	<script src="./javascript/afspraak-maken.js"></script>
+	
+</body>
+</html>
