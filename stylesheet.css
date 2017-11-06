@@ -237,15 +237,14 @@ nav li a:hover {
     width: 80%;
     min-height: 80%;
     margin: 0 auto;
-   	border: 1px black solid;
 }
 #page-div #three-prices{
 	min-height: 80%;
 	width: 90%;
 	margin: 0 auto;
 	box-sizing: border-box;
-/*	border: 1px blue solid;*/
 	text-align: center;
+
 }
 #page-div #three-prices .price{
 	float: left;
@@ -330,6 +329,7 @@ nav li a:hover {
 }
 
 #page-div #questions{
+
 	margin: 0 auto;
 	align-items: center;
     height: 470px;
