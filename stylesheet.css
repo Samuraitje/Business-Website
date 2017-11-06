@@ -235,12 +235,12 @@ nav li a:hover {
 
 #page-div #pricing{
     width: 80%;
-    height: 80%;
+    min-height: 80%;
     margin: 0 auto;
    	border: 1px black solid;
 }
 #page-div #three-prices{
-	height: 80%;
+	min-height: 80%;
 	width: 90%;
 	margin: 0 auto;
 	box-sizing: border-box;
@@ -252,7 +252,7 @@ nav li a:hover {
 	box-sizing: border-box;
 	margin: 2% 2%;
 	width: 29.33%;
-	height:  90%;
+	min-height:  90%;
 	padding: 4%;
 	background-color: rgb(222,229,228);
 /*		border: 1px blue solid;*/
