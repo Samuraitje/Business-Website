@@ -184,7 +184,42 @@ nav li a:hover {
 /*-------------------------------------------- side nav-bar------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------*/
 
+    .slide-nav{
+      position: fixed;
+      top: 0;
+      right: -150px;
+      height: 100vh;
+      width: 150px;
+      margin: 0;
+      padding-top: 20px;
+      background-color: grey;
+      transition: .3s;
+      z-index: 100000;
+    }
+    .slide-nav ul li{
+      list-style: none;
+      margin-bottom: 5px;
+    }
+    .active{
+      right: 0px;
+    }
+    .slide-nav-btn{
+      display: none;
+      position: fixed;
+      width: 50px;
+      height: 20px;
+      right: 160px;
+      top: 30px;
+      border: none;
+      outline: none;
+      background-color: #E2D027;
+      z-index: 99999;
+      cursor: pointer;
+    }
 
+    .btn-active{
+    	right: 180px !important;
+    }
 
 
 /*-------------------------------------------- Over ons page-----------------------------------------------------*/
@@ -511,13 +546,21 @@ button:hover{
 /*--------------------------------------------- MEDIA QUERIES ---------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------------*/
 
-@media all and (max-width: 700px){
+    @media screen and (max-width: 1000px){
 
-/*	#questions{
-		box-sizing: border-box;
-		margin: 0 2%;
-		width: 95%;
-	}
-*/
+		.slide-nav-btn{
+			display: block;
+		}
+		nav ul li{
+			display: none;
+		}
 
+    }
+    @media screen and (min-width: 1000px){
+
+		.slide-nav{
+			right: -150px;
+		}
+    }
+    
 

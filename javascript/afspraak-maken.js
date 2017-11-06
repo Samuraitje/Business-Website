@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	
+
 	$('#submit-button button').click(function(){
 		let array1 = [$('#name'),$('#phone'),$('#email'),$('#type'),$('#calendar')]
 		let array_filtered = array1
